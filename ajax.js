@@ -5,7 +5,7 @@
 //         callback: handlerData,
 //         data: {
 //             name: "hello",
-//             age: 99
+//             age: 99            
 //         }
 //     };
 //     Ajax(options);
