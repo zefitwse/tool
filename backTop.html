@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../Jquery.js"></script>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="toTop">返回顶部</div>
+</body>
+<style>
+    body{
+
+    }
+    .box1{
+        height: 1500px;
+        background-color: pink;
+    }
+    .box2{
+        height: 1500px;
+        background-color: blue;
+    }
+    .box3{
+        height: 500px;
+        background-color: yellow;
+    }
+    .toTop{
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        position: fixed;
+        left: 95%;
+        top: 80%;
+        text-align: center;
+        line-height: 100px;
+        display: none;
+
+    }
+</style>
+<script>
+    let  toTop=$(".toTop");
+    $(window).on('scroll',function (){
+        let scrollTop1=$("html,body").scrollTop();
+        if (scrollTop1>500){
+            toTop.fadeIn();
+        }else {
+            toTop.fadeOut();
+        }
+    })
+    toTop.on("click",function (){
+        $("html,body").animate({scrollTop: 0 });
+    })
+</script>
+</html>
