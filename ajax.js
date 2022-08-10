@@ -14,6 +14,7 @@
 //         //    对数据经行处理
 //     }
 // }
+// test
 function Ajax(options) {
     // POST AND GET 方式的data的格式转换
     //要判断data是否为对象 ,用typeof a===“”判断,并且不能为空，不能为数组
