@@ -8,5 +8,5 @@ app.get("/",(req,res)=>{
     res.send("hello")
 });
 app.listen(port ,()=>{
-    console.log("开启",'ccccccccccccc');
+    console.log("开启");
 });
