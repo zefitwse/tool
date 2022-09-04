@@ -9,6 +9,7 @@ app.get("/",(req,res)=>{
     res.send("hello","333333")
     res.send("hello","远程1")
     res.send("hello","远程2")
+    res.send("hello","远程3")
     
 });
 app.listen(port ,()=>{
