@@ -7,6 +7,7 @@ app.use(express.static('public'));
 app.get("/",(req,res)=>{
     res.send("hello","ddddddddddd")
     res.send("hello","333333")
+    res.send("hello","本地")
     
 });
 app.listen(port ,()=>{
