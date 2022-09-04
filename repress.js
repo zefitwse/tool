@@ -5,9 +5,10 @@ let port=3000;
 app.use(express.static('public'));
 //编辑路由
 app.get("/",(req,res)=>{
-    res.send("hello","本地1")
-    res.send("hello","本地2")
-    
+    res.send("hello","ddddddddddd")
+    res.send("hello","333333")
+    res.send("hello","远程1")
+    res.send("hello","远程3")
 });
 app.listen(port ,()=>{
     console.log("开启");
